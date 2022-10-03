@@ -1,28 +1,3 @@
-# Los estudiantes de primaria suelen colocar los problemas aritméticos en vertical para facilitar su resolución. Por ejemplo, "235 + 52" se convierte a:
-#
-#   235
-# +  52
-# -----
-# Crea una función que reciba una lista de cadenas que sean problemas aritméticos y devuelva los problemas ordenados verticalmente y uno al lado del otro. La función debe tomar opcionalmente un segundo argumento. Cuando el segundo argumento se establezca como True, se deberán mostrar las respuestas.
-#
-# Ejemplo
-# Llamando a la función:
-#
-# arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"])
-# Resultado:
-#
-#    32      3801      45      123
-# + 698    -    2    + 43    +  49
-# -----    ------    ----    -----
-# Llamando a la función:
-#
-# arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True)
-# Resultado:
-#
-#   32         1      9999      523
-# +  8    - 3801    + 9999    -  49
-# ----    ------    ------    -----
-#   40     -3800     19998      474
 # Reglas
 # La función devolverá la conversión correcta si los problemas suministrados están correctamente formateados, de lo contrario, devolverá una cadena que describe un error significativo para el usuario.
 #
