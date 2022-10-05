@@ -1,5 +1,5 @@
 def arithmetic_arranger(lista, boolean=False):
-    operan1, operan2, line, result = [], [], [], []
+    operan1, operan2, line, result, space = [], [], [], [], '    '
     if len(lista) <= 5:
         for l in lista:
             if not l.__contains__('+') and not l.__contains__('-'):
@@ -33,12 +33,11 @@ def arithmetic_arranger(lista, boolean=False):
                         result.append(str(calc).rjust(len(str(calc))+just3))
                 else:
                     print('Error: Numbers cannot be more than four digits.')
+                    break
             else:
                 print("Error: Numbers must only contain digits.")
-        print('    '.join(operan1))
-        print('    '.join(operan2))
-        print('    '.join(line))
-        print('    '.join(result))
+                break
+        print(space.join(operan1), space.join(operan2), space.join(line), space.join(result), sep='\n')
     else:
         print("Error: Too many problems.")
 
